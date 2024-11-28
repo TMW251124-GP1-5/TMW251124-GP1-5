@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order Confirmation</title>
+    <link rel="stylesheet" href="confirmation.css" />
+  </head>
+  <body>
+    <div class="order-container">
+      <h1>Order Now</h1>
+      <form id="orderForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="plan">Select Plan:</label>
+        <select id="plan" name="plan">
+          <option value="50">Basic - ₵50</option>
+          <option value="100">Balanced - ₵100</option>
+          <option value="150">Family - ₵150</option>
+        </select>
+
+        <button type="submit">Place Order</button>
+      </form>
+
+      <div id="confirmationMessage" class="hidden">
+        <h2>Order Confirmed!</h2>
+        <p>
+          Your order is being processed. A confirmation message has been sent to
+          your phone.
+        </p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
