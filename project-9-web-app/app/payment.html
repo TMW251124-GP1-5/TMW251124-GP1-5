@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TMWP9WA - plan</title>
+    <link rel="stylesheet" href="payment.css" />
+  </head>
+  <body>
+    <div class="payment-container">
+      <h1>Payment Information</h1>
+      <form id="paymentForm">
+        <label for="plan">Select Plan:</label>
+        <select id="plan" name="plan">
+          <option value="0">Select a Plan</option>
+          <option value="50">Basic (Solo) - ₵50</option>
+          <option value="100">Balanced (2 People) - ₵100</option>
+          <option value="150">Family Plan (4) - ₵150</option>
+        </select>
+
+        <p>Delivery Fee: ₵10</p>
+        <p>Total Cost: <span id="totalCost">₵0</span></p>
+
+        <label for="paymentMethod">Choose Payment Method:</label>
+        <select id="paymentMethod" name="paymentMethod">
+          <option value="momo">Mobile Money</option>
+          <option value="card">Credit/Debit Card</option>
+        </select>
+
+        <button type="submit">Pay Now</button>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
