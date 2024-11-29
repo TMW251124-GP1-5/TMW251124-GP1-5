@@ -1,4 +1,7 @@
 import { db } from "./config.js";
+import express from "express";
+
+console.log("FIrestore DB Instance", db);
 
 export const orderHandler = async (req, res) => {
   const {
