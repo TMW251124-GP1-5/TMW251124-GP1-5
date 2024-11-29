@@ -12,7 +12,14 @@ const app = express();
 const PORT = process.env.PORT || 4000;
 
 // middleware
-app.use(cors());
+app.use(
+  cors({
+    origin: "*", // Allows all origins, you can narrow this down if needed
+    methods: ["GET", "POST"],
+    allowedHeaders: ["Content-Type"],
+  })
+);
+
 app.use(bodyParser.json());
 // app.use(express.json());
 app.use(helmet());

@@ -52,25 +52,16 @@
     </section>
 
     <section id="confirmationSection" class="confirmation hidden">
-      <h2>Order Confirmation</h2>
-      <p>
-        Thank you, <span id="customerName"></span>! Your order for the
-        <span id="planName"></span> plan has been successfully placed.
-      </p>
-      <p>Order Details:</p>
-      <ul>
-        <li><strong>Plan:</strong> <span id="orderPlan"></span></li>
-        <li>
-          <strong>Dietary Preference:</strong> <span id="orderDietary"></span>
-        </li>
-        <li>
-          <strong>Delivery Address:</strong> <span id="orderAddress"></span>
-        </li>
-        <li><strong>Add-ons:</strong> <span id="orderAddOns"></span></li>
-      </ul>
-      <p>
-        A confirmation message has been sent to your phone via WhatsApp/SMS.
-      </p>
+      <div id="confirmationSection" class="hidden">
+        <h3>Order Confirmation</h3>
+        <p>Thank you for your order, <span id="customerName"></span>!</p>
+        <p>Your plan: <span id="orderPlan"></span></p>
+        <p>Your dietary preference: <span id="orderDietary"></span></p>
+        <p>Your delivery address: <span id="orderAddress"></span></p>
+        <p>Your add-ons: <span id="orderAddOns"></span></p>
+        <p>Total cost: <span id="totalCostDisplay"></span></p>
+        <p>We will notify you when your order is on its way!</p>
+      </div>
     </section>
     <script src="script.js"></script>
   </body>

@@ -1,0 +1,4 @@
+{
+  "public": "app",
+  "rewrites": [{ "source": "/api/(.*)", "destination": "/server/api/$1" }]
+}

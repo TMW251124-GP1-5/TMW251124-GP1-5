@@ -25,6 +25,7 @@ function initializeFirebase() {
     } catch (error) {
       console.error("Error initializing Firebase:", error.message);
       throw error; // Stop the app if initialization fails
+      process.exit(1);
     }
   } else {
     console.log("Firebase already initialized.");
