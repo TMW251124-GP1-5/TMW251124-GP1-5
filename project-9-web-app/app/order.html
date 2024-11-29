@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TMWP9WA - Order</title>
+    <link rel="stylesheet" href="order.css" />
+  </head>
+  <body>
+    <section class="order-section">
+      <h2 class="section-title">Order Form</h2>
+      <form id="orderForm" class="order-form">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" class="form-input" required />
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" class="form-input" required />
+        </div>
+        <div class="form-group">
+          <label for="address">Delivery Address:</label>
+          <input type="text" id="address" class="form-input" required />
+        </div>
+        <div class="form-group">
+          <label for="plan">Select Plan:</label>
+          <select id="plan" name="plan" class="form-input" required>
+            <option value="" disabled selected>Select a Plan</option>
+            <option value="50">Basic (Solo) - ₵50</option>
+            <option value="100">Balanced (2 People) - ₵100</option>
+            <option value="150">Family Plan (4) - ₵150</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="dietaryPreference">Dietary Preference:</label>
+          <select id="dietaryPreference" class="form-input">
+            <option value="Vegan">Vegan</option>
+            <option value="Non-Vegan">Non-Vegan</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="addOns">Add-ons:</label>
+          <input
+            type="text"
+            id="addOns"
+            class="form-input"
+            placeholder="Extra proteins, snacks..."
+          />
+        </div>
+        <button type="submit" class="submit-btn">Submit Order</button>
+      </form>
+    </section>
+
+    <section id="confirmationSection" class="confirmation hidden">
+      <h2>Order Confirmation</h2>
+      <p>
+        Thank you, <span id="customerName"></span>! Your order for the
+        <span id="planName"></span> plan has been successfully placed.
+      </p>
+      <p>Order Details:</p>
+      <ul>
+        <li><strong>Plan:</strong> <span id="orderPlan"></span></li>
+        <li>
+          <strong>Dietary Preference:</strong> <span id="orderDietary"></span>
+        </li>
+        <li>
+          <strong>Delivery Address:</strong> <span id="orderAddress"></span>
+        </li>
+        <li><strong>Add-ons:</strong> <span id="orderAddOns"></span></li>
+      </ul>
+      <p>
+        A confirmation message has been sent to your phone via WhatsApp/SMS.
+      </p>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>

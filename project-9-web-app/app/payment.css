@@ -1,0 +1,96 @@
+/* Container for the payment form */
+.payment-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Title styling */
+.payment-container h1 {
+  text-align: center;
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Form elements styling */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Label styling */
+label {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Select dropdown styling */
+select {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+}
+
+/* Paragraph styling for Delivery Fee and Total Cost */
+p {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Total cost styling */
+#totalCost {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #e74c3c;
+}
+
+/* Submit button styling */
+button {
+  padding: 12px;
+  font-size: 1rem;
+  background-color: #20640f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2d9912;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .payment-container {
+    width: 90%;
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  label,
+  select,
+  p {
+    font-size: 0.9rem;
+  }
+
+  button {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+}
