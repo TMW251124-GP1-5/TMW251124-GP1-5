@@ -114,7 +114,7 @@ li {
 }
 
 /* Section and Form Styles */
-.order-section {
+/* .order-section {
   max-width: 600px;
   margin: 0 auto;
   padding: 20px;
@@ -163,10 +163,10 @@ label {
 
 .submit-btn:hover {
   background-color: #2d9912;
-}
+} */
 
 /* Confirmation Section */
-.confirmation {
+/* .confirmation {
   background-color: #f9f9f9;
   padding: 20px;
   border-radius: 8px;
@@ -176,7 +176,7 @@ label {
 
 .hidden {
   display: none;
-}
+} */
 
 /* Footer */
 .footer {

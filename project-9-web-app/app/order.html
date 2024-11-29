@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TMWP9WA - Order</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="order.css" />
   </head>
   <body>
     <section class="order-section">
@@ -23,8 +23,13 @@
           <input type="text" id="address" class="form-input" required />
         </div>
         <div class="form-group">
-          <label for="selectedPlan">Selected Plan:</label>
-          <input type="text" id="selectedPlan" class="form-input" readonly />
+          <label for="plan">Select Plan:</label>
+          <select id="plan" name="plan" class="form-input" required>
+            <option value="" disabled selected>Select a Plan</option>
+            <option value="50">Basic (Solo) - ₵50</option>
+            <option value="100">Balanced (2 People) - ₵100</option>
+            <option value="150">Family Plan (4) - ₵150</option>
+          </select>
         </div>
         <div class="form-group">
           <label for="dietaryPreference">Dietary Preference:</label>
@@ -46,7 +51,6 @@
       </form>
     </section>
 
-    <!-- Order Confirmation Message -->
     <section id="confirmationSection" class="confirmation hidden">
       <h2>Order Confirmation</h2>
       <p>
@@ -68,11 +72,6 @@
         A confirmation message has been sent to your phone via WhatsApp/SMS.
       </p>
     </section>
-
-    <footer class="footer">
-      <p>&copy; 2024 TMWP9WA. All rights reserved.</p>
-    </footer>
-
     <script src="script.js"></script>
   </body>
 </html>
