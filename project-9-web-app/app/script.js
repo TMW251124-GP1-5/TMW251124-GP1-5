@@ -1,33 +1,3 @@
-// document.getElementById('menuToggle').addEventListener('click', () => {
-//   const navLinks = document.getElementById('navLinks');
-//   navLinks.classList.toggle('show');
-// });
-
-// document.addEventListener('DOMContentLoaded', () => {
-//   const planSelect = document.getElementById('plan');
-//   const totalCostDisplay = document.getElementById('totalCost');
-
-//   // Delivery fee
-//   const deliveryFee = 10;
-
-//   // Update total cost when plan changes
-//   planSelect.addEventListener('change', () => {
-//     const planCost = parseInt(planSelect.value, 10);
-//     if (!isNaN(planCost)) {
-//       const totalCost = planCost + deliveryFee;
-//       totalCostDisplay.textContent = `$${totalCost}`;
-//     } else {
-//       totalCostDisplay.textContent = '$0';
-//     }
-//   });
-
-//   // Handle form submission
-//   const paymentForm = document.getElementById('paymentForm');
-//   paymentForm.addEventListener('submit', (event) => {
-//     event.preventDefault();
-//     alert('Payment successful!');
-//   });
-// });
 document.addEventListener('DOMContentLoaded', () => {
   const planSelect = document.getElementById('plan');
   const totalCostDisplay = document.getElementById('totalCost');

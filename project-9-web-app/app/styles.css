@@ -1,6 +1,13 @@
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* Hero Section */
 .hero-section {
-  min-height: 80vh;
+  min-height: 80vh; /* Adjust this if it's not fitting well on mobile */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -77,18 +84,45 @@
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
+  .hero-section {
+    min-height: 60vh; /* Reduce height on smaller screens */
+    padding: 0 1rem; /* Add some padding on smaller screens */
+  }
+
   .hero-content h2 {
     font-size: 2rem;
   }
 
+  .hero-content p {
+    font-size: 1rem;
+  }
+
   .hero-buttons {
     flex-direction: column;
+    align-items: center;
   }
 
   .hero-btn {
-    width: 100%;
+    width: 100%; /* Make buttons full-width on mobile */
+    padding: 1rem;
   }
 }
+
+@media (max-width: 480px) {
+  /* Additional tweaks for very small screens */
+  .hero-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .hero-btn {
+    padding: 1rem 2rem;
+  }
+}
+
 /* Global Styles */
 body {
   font-family: 'Arial', sans-serif;
@@ -112,71 +146,6 @@ ul {
 li {
   margin: 8px 0;
 }
-
-/* Section and Form Styles */
-/* .order-section {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #ffffff;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.order-form {
-  display: flex;
-  flex-direction: column;
-}
-
-.form-group {
-  margin-bottom: 15px;
-}
-
-label {
-  font-weight: bold;
-  margin-bottom: 5px;
-  font-size: 1rem;
-}
-
-.form-input {
-  padding: 10px;
-  font-size: 1rem;
-  border-radius: 6px;
-  border: 1px solid #ddd;
-}
-
-.form-input:focus {
-  outline: none;
-  border-color: #3498db;
-}
-
-.submit-btn {
-  padding: 12px 20px;
-  background-color: #20640f;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 1rem;
-  transition: background-color 0.3s;
-}
-
-.submit-btn:hover {
-  background-color: #2d9912;
-} */
-
-/* Confirmation Section */
-/* .confirmation {
-  background-color: #f9f9f9;
-  padding: 20px;
-  border-radius: 8px;
-  margin-top: 20px;
-  border: 1px solid #ddd;
-}
-
-.hidden {
-  display: none;
-} */
 
 /* Footer */
 .footer {
