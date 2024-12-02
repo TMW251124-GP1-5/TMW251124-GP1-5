@@ -3,11 +3,14 @@ import { readFileSync } from "fs";
 import { resolve } from "path";
 import dotenv from "dotenv";
 
-dotenv.config();
+dotenv.config(); // Load environment variables from .env file 
 
-const serviceAccountPath = resolve(process.env.FIREBASE_SERVICE_ACCOUNT);
-console.log("Service Account Path:", serviceAccountPath);
+const serviceAccountPath = resolve(process.env.FIREBASE_SERVICE_ACCOUNT); // Path to service account key file
+// console.log("Service Account Path:", serviceAccountPath); // Log the path to the service account key file
 
+
+
+// Initialize Firebase 
 function initializeFirebase() {
   if (!admin.apps.length) {
     try {
