@@ -14,16 +14,16 @@ const PORT = process.env.PORT || 4000;
 // middleware
 app.use(
   cors({
-    origin: "*", // Allows all origins, you can narrow this down if needed
-    methods: ["GET", "POST"],
-    allowedHeaders: ["Content-Type"],
+    origin: "*", // Allows all origins,
+    origin: "http://127.0.0.1:5500", // Allows only the specified origin
+    methods: ["GET", "POST"], // http methods
+    allowedHeaders: ["Content-Type"], // headers to allow
   })
 );
 
-app.use(bodyParser.json());
+app.use(bodyParser.json()); // for parsing application/json
 // app.use(express.json());
-app.use(helmet());
-app.use(bodyParser.json());
+app.use(helmet()); // for security
 
 // routes
 app.use("/api", apiRoutes);
