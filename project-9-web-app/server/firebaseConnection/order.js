@@ -1,8 +1,9 @@
 import { db } from "./config.js";
-import express from "express";
+// import express from "express";
 
-console.log("FIrestore DB Instance", db);
+// console.log("FIrestore DB Instance", db);
 
+// orderHandler function to handle the order request
 export const orderHandler = async (req, res) => {
   const {
     name,
@@ -33,4 +34,5 @@ export const orderHandler = async (req, res) => {
     console.error("Error placing order: ", error);
     res.status(500).json({ message: "Failed to place order" });
   }
+  // console.log("Order Placed", req.body);
 };
