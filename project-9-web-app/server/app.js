@@ -14,10 +14,9 @@ const PORT = process.env.PORT || 4500;
 // middleware
 app.use(
   cors({
-    origin: "*", // Allows all origins,
-    origin: "http://127.0.0.1:5500", // Allows only the specified origin
-    methods: ["GET", "POST"], // http methods
-    allowedHeaders: ["Content-Type"], // headers to allow
+    origin: "*", // Allows all origins
+    methods: ["GET", "POST"], // HTTP methods
+    allowedHeaders: ["Content-Type"], // Allowed headers
   })
 );
 
