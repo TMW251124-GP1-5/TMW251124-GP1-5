@@ -9,7 +9,7 @@ import bodyParser from "body-parser";
 // env variables
 dotenv.config();
 const app = express();
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT || 4500;
 
 // middleware
 app.use(
@@ -29,6 +29,6 @@ app.use(helmet()); // for security
 app.use("/api", apiRoutes);
 
 // start server
-app.listen(PORT, () => {
+app.listen(PORT, "0.0.0.0", () => {
   console.log(`Server is running on port ${PORT}`);
 });
